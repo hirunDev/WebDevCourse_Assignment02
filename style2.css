@@ -1,0 +1,60 @@
+/* how I styled the page */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: url(./assets/background.jpg);
+    /* I get this from pexels.com */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text{
+    font-size: 7rem;
+    position: relative;
+    bottom: 10vh;
+}
+
+.button{
+    background: black;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -ms-transition: background .5s;
+    -o-transition: background .5s;
+    opacity: .7;
+    border: none;
+    position: fixed;
+    align-items: center;
+    bottom: 43vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.two{
+    bottom: 34vh;
+    padding: 1rem 4.5rem;
+}
+
+#button:hover{
+    background-color: rgba(0,0,0,.85);
+    cursor: pointer;
+}

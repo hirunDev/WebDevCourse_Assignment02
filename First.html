@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- css stylesheet link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- font -->
+    <title>Sign In</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h1>Sign In</h1>
+        </div>
+        <form class="card-form">
+          <div class="form-item">
+            <span class="item-icon material-symbols-rounded">person</span>
+            <input
+              class="inp"
+              type="text"
+              placeholder="Username"
+              id="name"
+              required
+              autofocus
+            />
+          </div>
+          <div class="form-item">
+            <span class="item-icon material-symbols-rounded">lock</span>
+            <input
+              class="inp"
+              type="password"
+              placeholder="Password"
+              id="password"
+              required
+            />
+          </div>
+          <div class="form-item-other">
+            <div class="checkbox">
+              <input type="checkbox" id="remembercheckbox" />
+              <label for="remembercheckbox">Remember Me</label>
+            </div>
+          </div>
+          <button onclick="task()" type="submit">Sign In</button>
+        </form>
+      </div>
+    </div>
+    <!-- sign in card -->
+  </body>
+  <script>
+    function task() {
+      if (document.getElementById("password").value.length >= 8) {
+        window.location.assign("Second.html");
+        alert("Sign in Successful.");
+      } else {
+        alert("Password must have 8 or more than 8 characters.");
+      }
+    }
+    // to alert if the password is not strong enough
+    // I tried to get the data from the form with localstorage in many ways but I couldn't do it. I request teachers to teach us about localstorage after the assignment.
+  </script>
+</html>
